@@ -1,0 +1,362 @@
+<html>
+    <head>
+        <title>Car Rental System</title>
+        <style>
+            body {background-image: url(https://c4.wallpaperflare.com/wallpaper/66/25/239/machine-grey-background-volvo-wallpaper-preview.jpg); background-size: 1600px 1000px;}
+            h1{
+                color: red; text-align: center; font-size: 100px;
+            }
+            p100{
+                color: black;
+                text-align: center;
+                font-size: 22px;
+                margin-right: 500px;
+                margin-left: 500px;
+            }
+            p101{
+                color: black;
+                text-align: center;
+                font-size: 22px;
+                margin-right: 600px;
+                margin-left: 600px;
+            }
+            h2{
+                color: blue; font-size: 40px;
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+            }
+            label{
+                color: black;
+                font-size: 20px;
+            }
+            label:hover{
+                color: red;
+                text-decoration: overline;
+            }
+            h5{
+                color: darkred; text-align: center; font-size: 60px;
+            }
+            .vehicles{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .vehicles > div{
+                margin-right: 20px;
+            }
+            .vehicle{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 23px;
+                color: black;
+            }
+            .intro{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .choose{
+                display: flex;
+                align-items: center;
+                justify-content: center
+            }
+            .next{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .sale_p{
+                width: 80%;
+            }
+            .sale_p > p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 60px;
+                color: brown;
+            }
+            .sale_img{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-left: 150px;
+                border-radius: 10px;
+            }
+            .vehicle > h, .vehicle > img, .vehicle > p{
+                margin-bottom: 20px;
+            }
+            .vehicles > .vehicle > button{
+                color: white;
+                background-color: blue;
+                width: 90px;
+                height: 35px;
+                margin: 10px;
+                border-radius: 20px;
+            }
+            .vehicles > .vehicle > button:hover{
+                color: aliceblue;
+                background-color: skyblue;
+                width: 95px;
+                height: 38px;
+            }
+            .vehicle > h{
+                font-size: 50px;
+                color: chocolate;
+            }
+            .vehicle > k{
+                font-size: 80px;
+                color: chocolate;
+            }
+            .vehicle > w{
+                font-size: 30px;
+                color: chocolate;
+            }
+            #Buttons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #Buttons>button{
+                margin-right: 40px;
+            }
+            .vehicle > p:hover{
+                color: red;
+            }
+            #Buttons > button:hover{
+                color: chartreuse;
+            }
+            #Buttons > button{
+                color: blue;
+                background-color: brown;
+                width: 70px;
+                height: 25px;
+                border-radius: 10px;
+            }
+            .vehicle > k:hover{
+                    color: red;
+                text-decoration: underline;
+            }
+            .vehicle > h:hover{
+                color: blue;
+                text-decoration: dashed;
+            }
+            button{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>--Welcome--</h1>
+            <div id="Buttons">
+                <button> Login</button>
+                <button> Sign Up</button>
+            </div>
+            <h2> Looking for a <br>car rent</h2>
+            <h3>Contact details:<br>Pappu - 9192939495<br>Popat - 9697989910
+            </h3>
+            <br>
+            <div class="intro">
+                <label for="first1">Enter your first name:</label>
+                <input type="text" id="first1" name="fname" placeholder="First name">
+                <br><br>
+                <label for="Middle">Enter your middle name:</label>
+                <input type="text" id="second2" name="qname" placeholder="Middle name">
+                <br><br>
+                <label for="Last">Enter your last name:</label>
+                <input type="text" id="second2" name="tname" placeholder="Last name">
+                <br><br>
+                <label for="Mobile No.">Enter your mobile no.:</label>
+                <input type="text" id="second2" name="aname" placeholder="Mobile no.">
+                <br><br>
+                <label for="">Enter your email-id</label>
+                <input type="email" id="" name="" placeholder="g-mail.com">
+                <br><br>
+                <label for="">Enter your password</label>
+                <input type="password" id="" name="" placeholder="password">
+                <br><br>
+                <input type="submit" id="" name="">
+                <br><br><br>
+                <label for="" id="" name="">Pick-up location</label>
+                <input type="search" id="" name="" placeholder="Pick-up location">
+                <br><br><br>
+                <label for="">Issuing date and time</label>
+                <input type="datetime-local" id="" name="">
+                <br><br><br>
+                <label for="">Return date and time</label>
+                <input type="datetime-local" id="" name="">
+            </div>
+            <br><br>
+            <div class="next">
+                <button> Next</button>
+            </div>
+            <br>
+            <div class="choose">
+                <label for="">Choose a car</label>
+                 <select name="" id="">
+                    <option value="a">Audi</option>
+                    <option value="t">Thar</option>
+                    <option value="r">Range Rover</option>
+                    <option value="q">Alto800</option>
+                    <option value="b">BMW</option>
+                    <option value="c">JEEP</option>
+                    <option value="d">Scorpio</option>
+                    <option value="e">Fortuner</option>
+                 </select>
+            </div>
+            <br>
+            <div class="sale">
+                <div class="sale_p">
+                    <p>Here's a bumper offer for you</p>
+                </div>
+                <div class="sale_img">
+                    <img src="https://img.freepik.com/premium-psd/rent-car-social-media-banner-template_221638-177.jpg?w=2000" width="250px" height="225px">
+                </div>
+            </div>
+            <h5><u>Description of vehicles</u></h5>
+            <div class="vehicles">
+                <div class="vehicle">
+                    <h>BMW</h>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxRcZ9hZr5-L0mwPYB4he303ZzDPQroBnm0w&usqp=CAU" alt="" width="200" height="180">
+                    <k>RS 10000</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The BMW 7 Series has 1 Diesel Engine and 1 Petrol Engine on offer.
+                        The Diesel engine is 2993 cc while the Petrol engine is 2998 cc. 
+                        It is available with Automatic transmission.Depending upon the variant and fuel type the 7 Series has a mileage of 11.86 to 39.53 kmpl.
+                        The 7 Series is a 4 seater 6 cylinder car and has length of 5238mm, width of 2169mm and a wheelbase of 3210mm.
+                        The 7 Series mileage is 11.86 to 39.53 kmpl.
+                        The Automatic Diesel variant has a mileage of 17.66 kmpl.
+                        The Automatic Petrol variant has a mileage of 39.53 kmpl.
+                    </p>
+                </div>
+                <div class="vehicle">
+                    <h>JEEP</h>
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Mahindra-Jeep/3526/1545286956016/front-left-side-47.jpg?tr=w-375" alt="" width="200" height="180">
+                    <k>RS 2000</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The Mahindra Jeep has 5 Diesel Engine and 1 Petrol Engine on offer.
+                        The Diesel engine is 2489 cc and 2112 cc and 2195 cc and 2523 cc and 2498 cc while the Petrol engine is 2498 cc.
+                        It is available with Manual transmission.
+                        Depending upon the variant and fuel type the Jeep has a mileage of.
+                        The Jeep is a 6 seater 4 cylinder car.
+                        The Manual Diesel variant has a mileage of 19.36 kmpl.
+                        The Automatic Diesel variant has a mileage of 18.4 kmpl.
+                    </p>
+                </div>
+                <div class="vehicle">
+                    <h>Scorpio</h>
+                    <img src="https://www.indiacarnews.com/wp-content/uploads/2021/05/2021-Mahindra-Scorpio-off-roading.jpg" alt="" width="200" height="180">
+                    <k>RS 4500</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The Mahindra Scorpio has 3 Diesel Engine on offer.
+                        The Diesel engine is 2523 cc and 2179 cc and 1997 cc.
+                        It is available with Manual & Automatic transmission.
+                        Depending upon the variant and fuel type the Scorpio has a mileage of & Ground clearance of Scorpio is 180mm.
+                        The Scorpio is a 7 seater 4 cylinder car and has length of 4456mm, width of 1820mm and a wheelbase of 2680mm.
+                        The Manual Diesel variant has a mileage of 16.36 kmpl.
+                        The Automatic Diesel variant has a mileage of 15.4 kmpl.
+                    </p>
+                </div>
+                <div class="vehicle">
+                    <h>Fortuner</h>
+                    <img src="https://st4.depositphotos.com/1550655/20569/i/450/depositphotos_205697786-stock-photo-chiangmai-thailand-july-2018-private.jpg" alt="" width="200" height="180">
+                    <k>RS 5000</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The Toyota Fortuner has 1 Diesel Engine and 1 Petrol Engine on offer.
+                        The Diesel engine is 2755 cc while the Petrol engine is 2694 cc.
+                        It is available with Automatic & Manual transmission.
+                        Depending upon the variant and fuel type the Fortuner has a mileage of.
+                        The Fortuner is a 7 seater 4 cylinder car and has length of 4795mm, width of 1855mm and a wheelbase of 2745.
+                        The Manual Diesel variant has a mileage of 8.0 kmpl.
+                        The Manual Petrol variant has a mileage of 10.0 kmpl.
+                        The Automatic Petrol variant has a mileage of 10.0 kmpl.
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="vehicles">
+                <div class="vehicle">
+                    <h>Audi</h>
+                    <img src="https://cdni.autocarindia.com/ExtraImages/20220208104501_Audi_A4_LT_1.jpg" alt="" width="200" height="180">
+                    <k>RS 9000</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The Audi A4 has 1 Petrol Engine on offer. The Petrol engine is 1998 cc.
+                        It is available with Automatic transmission.Depending upon the variant and fuel type the A4 has a mileage of.
+                        Access To Smartphone Voice Control
+                        Driver Information System With 17.78cm Colour Display
+                        Bose Surround Sound System
+                        DVD player
+                        Audi sound system
+                        Subwoofers
+                        The A4 is a 5 seater 4 cylinder car and has length of 4762mm, width of 1847mm and a wheelbase of 2819mm.
+                        Audi A4 mileage is 17.4 kmpl. The mileage of A4 Petrol is 17.4 kmpl.
+
+                    </p>
+                </div>
+                <div class="vehicle">
+                    <h>Alto800</h>
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/360x240/Maruti/Maruti-Alto-800/1556028710229/047.jpg" alt="" width="200" height="180">
+                    <k>RS 2000</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The Maruti Alto 800 has 1 Petrol Engine and 1 CNG Engine on offer.
+                        The Petrol engine is 796 cc while the CNG engine is 796 cc.
+                        It is available with Manual transmission.Depending upon the variant and fuel type the Alto 800 has a mileage of 22.05 kmpl to 31.59 km/kg.
+                        The Alto 800 is a 4 seater 3 cylinder car and has length of 3445, width of 1515 and a wheelbase of 2360.
+                        The Alto 800 mileage is 22.05 kmpl to 31.59 km/kg.
+                        The Manual Petrol variant has a mileage of 22.05 kmpl.
+                        The Manual CNG variant has a mileage of 31.59 km/kg.
+                    </p>
+                </div>
+                <div class="vehicle">
+                    <h>Range Rover</h>
+                    <img src="https://m.economictimes.com/thumb/msid-69429504,width-1200,height-900,resizemode-4,imgsize-586493/jlr-unveils-petrol-variant-of-range-rover-sport-at-rs-86-71-lakh.jpg" alt="" width="200" height="180">
+                    <k>RS 12000</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The Land Rover Range Rover has 1 Diesel Engine and 3 Petrol Engine on offer.
+                        The Diesel engine is 2997 cc while the Petrol engine is 2997 cc and 4395 cc and 4367 cc.
+                        It is available with Automatic transmission.
+                        Depending upon the variant and fuel type the Range Rover has a mileage of.
+                        MeridianTM Sound System, Wireless device charging with phone signal booster3, Wireless Apple CarPlay1 and Wireless Android Auto2
+                        The Range Rover is a 7 seater 8 cylinder car and has length of 5052mm, width of 2209mm and a wheelbase of 2997mm.
+                        The Automatic Petrol variant has a mileage of 14.01 kmpl.
+                    </p>
+                </div>
+                <div class="vehicle">
+                    <h>Thar</h>
+                    <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210406061737_Mahindra_Thar_RT_lead.jpg" alt="" width="200" height="180">
+                    <k>RS 5000</k>
+                    <w>per day</w>
+                    <button>Click Here For Booking</button>
+                    <p>The Mahindra Thar has 1 Diesel Engine and 1 Petrol Engine on offer.
+                        The Diesel engine is 2184 cc while the Petrol engine is 1997 cc.
+                        It is available with Automatic & Manual transmission.
+                        Depending upon the variant and fuel type the Thar has a mileage of & Ground clearance of Thar is 226.
+                        The Thar is a 4 seater 4 cylinder car and has length of 3985, width of 1855 and a wheelbase of 2450.
+                        The Manual Diesel variant has a mileage of 15.2 kmpl.
+                        The Manual Petrol variant has a mileage of 15.2 kmpl.
+                        The Automatic Petrol variant has a mileage of 15.2 kmpl.
+
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <p100>Copyright © 2022 Booking.com Transport Limited Trading as Takecarrental.com. 
+            </p100>
+            <p101>All rights are reserved.
+            </p101>
+        </form>
+    </body>
+</html>
